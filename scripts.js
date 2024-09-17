@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
         card.classList.remove('active');
         activeSegment = null;
         fetchFirebaseData(selectedStage, selectedCareer, false, (items) => {
-            displayCard(index, items.slice(0, 3)); // Fetch and display only the first 3 items for the General Timeline
+            displayCard(index, items); // Fetch and display only the first 3 items for the General Timeline
         });
     }
 
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             if (items && items.length > 0) {
                 cardTitle.textContent = `Action Items for ${selectedStage.charAt(0).toUpperCase() + selectedStage.slice(1)} - ${selectedCareer.charAt(0).toUpperCase() + selectedCareer.slice(1)}`;
-                cardContent.innerHTML = items.slice(0, 3).map(item => `<li>${item}</li>`).join(''); // Show up to 3 items for the General Timeline
+                cardContent.innerHTML = items.map(item => `<li>${item}</li>`).join(''); // Show up to 3 items for the General Timeline
             } else {
                 cardTitle.textContent = 'No items found';
                 cardContent.innerHTML = '';
