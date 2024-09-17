@@ -38,6 +38,13 @@ document.addEventListener('DOMContentLoaded', function () {
         college: '#80bfff'
     };
 
+    // Function to map "high" to "9-10" and "college" to "11-12" for display purposes
+    function mapStageLabel(stage) {
+        if (stage === 'high') return '9-10';
+        if (stage === 'college') return '11-12';
+        return stage.charAt(0).toUpperCase() + stage.slice(1); // Capitalizes "elementary" and "middle"
+    }
+
     function setTimelineWidth() {
         const containerWidth = timelineContainer.parentElement.offsetWidth;
         timelineContainer.style.width = `${containerWidth}px`;
@@ -90,6 +97,9 @@ document.addEventListener('DOMContentLoaded', function () {
             segment.style.backgroundColor = timelineColors[stage];
             segment.style.flex = `1 1 ${segmentWidth}`; // Each segment gets equal width
 
+            // Set the label to the mapped stage name
+            //segment.innerHTML = mapStageLabel(stage);
+
             segment.addEventListener('click', function () {
                 selectStageFromSegment(stage, index);
             });
@@ -102,18 +112,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function selectStageFromSegment(stage, index) {
         selectedStage = stage;
-        stageButton.innerHTML = `${stage.charAt(0).toUpperCase() + stage.slice(1)} <span class="arrow-down"></span>`;
+        stageButton.innerHTML = `${mapStageLabel(stage)} <span class="arrow-down"></span>`; // Display mapped stage
         card.classList.remove('active');
         activeSegment = null;
         fetchFirebaseData(selectedStage, selectedCareer, false, (items) => {
-            displayCard(index, items); // Fetch and display only the first 3 items for the General Timeline
+            displayCard(index, items); // Fetch and display all items for the General Timeline
         });
     }
 
     function displayCard(taskIndex, items) {
         if (isSpecialTimeline) {
             if (items && items.length > 0 && items[taskIndex]) {
-                cardTitle.textContent = `Specific ${selectedCareer.charAt(0).toUpperCase() + selectedCareer.slice(1)} Action Items for ${selectedStage.charAt(0).toUpperCase() + selectedStage.slice(1)}`;
+                cardTitle.textContent = `Specific ${selectedCareer.charAt(0).toUpperCase() + selectedCareer.slice(1)} Action Items for ${mapStageLabel(selectedStage)}`;
                 cardContent.innerHTML = `<li>${items[taskIndex]}</li>`;
             } else {
                 cardTitle.textContent = 'No items found';
@@ -121,8 +131,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         } else {
             if (items && items.length > 0) {
-                cardTitle.textContent = `Action Items for ${selectedStage.charAt(0).toUpperCase() + selectedStage.slice(1)} - ${selectedCareer.charAt(0).toUpperCase() + selectedCareer.slice(1)}`;
-                cardContent.innerHTML = items.map(item => `<li>${item}</li>`).join(''); // Show up to 3 items for the General Timeline
+                cardTitle.textContent = `Action Items for ${mapStageLabel(selectedStage)} - ${selectedCareer.charAt(0).toUpperCase() + selectedCareer.slice(1)}`;
+                cardContent.innerHTML = items.map(item => `<li>${item}</li>`).join(''); // Show all items for the General Timeline
             } else {
                 cardTitle.textContent = 'No items found';
                 cardContent.innerHTML = '';
@@ -172,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const newStage = this.dataset.section;
             if (newStage !== selectedStage || stageButton.textContent.trim() === 'Select Stage') {
                 selectedStage = newStage;
-                stageButton.innerHTML = `${this.textContent} <span class="arrow-down"></span>`;
+                stageButton.innerHTML = `${mapStageLabel(newStage)} <span class="arrow-down"></span>`; // Use mapped stage name
                 card.classList.remove('active');
                 activeSegment = null;
 
