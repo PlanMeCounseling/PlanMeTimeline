@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <div class="dropdown">
+                <button class="dropbtn">Select Career <span class="arrow-down"></span></button>
+                <div class="dropdown-content">
+                    <a href="#" data-career="stem">STEM</a>
+                    <a href="#" data-career="humanities">Humanities</a>
+                    <!-- <a href="#" data-career="sports">Sports</a> -->
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Select Stage <span class="arrow-down"></span></button>
+                <div class="dropdown-content">
+                    <a href="#" data-section="elementary">Elementary</a>
+                    <a href="#" data-section="middle">Middle</a>
+                    <a href="#" data-section="high">High School</a>
+                    <a href="#" data-section="college">College</a>
+                </div>
+            </div>
+            <div class="switch-container">
+                <label class="switch">
+                    <input type="checkbox" id="toggle-switch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="segment" data-section="elementary" style="background-color: #ffafaf;"></div>
+                <div class="segment" data-section="middle" style="background-color: #a4d9a4;"></div>
+                <div class="segment" data-section="high" style="background-color: #ffaa00;"></div>
+                <div class="segment" data-section="college" style="background-color: #80bfff;"></div>
+                <div class="arrow"></div>
+            </div>
+            <div class="card" id="card">
+                <h2 id="card-title"></h2>
+                <ul id="card-content"></ul>
+            </div>
+        </div>
+    </div>
+    <!-- Include only the main.js script as it imports ui.js internally -->
+    <script type="module" src="scripts.js"></script>
+</body>
+</html>

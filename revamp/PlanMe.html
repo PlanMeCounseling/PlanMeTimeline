@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown">
+            <button class="dropbtn">Select Career <span class="arrow-down"></span></button>
+            <div class="dropdown-content">
+                <a href="#" data-career="stem">STEM</a>
+                <a href="#" data-career="humanities">Humanities</a>
+                <a href="#" data-career="sports">Sports</a>
+            </div>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="segment" data-section="elementary" style="background-color: #ffafaf;"></div>
+                <div class="segment" data-section="middle" style="background-color: #a4d9a4;"></div>
+                <div class="segment" data-section="high" style="background-color: #ffeb99;"></div>
+                <div class="segment" data-section="college" style="background-color: #80bfff;"></div>
+                <div class="arrow"></div>
+            </div>
+            <div class="card" id="card">
+                <h2 id="card-title"></h2>
+                <ul id="card-content"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

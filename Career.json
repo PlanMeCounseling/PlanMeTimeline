@@ -1,0 +1,106 @@
+{
+    "actionItems": {
+        "elementary": {
+            "stem": ["General STEM Elementary Item 1", "General STEM Elementary Item 2", "General STEM Elementary Item 3"],
+            "humanities": ["General Humanities Elementary Item 1", "General Humanities Elementary Item 2", "General Humanities Elementary Item 3"],
+            "sports": ["General Sports Elementary Item 1", "General Sports Elementary Item 2", "General Sports Elementary Item 3"]
+        },
+        "middle": {
+            "stem": ["General STEM Middle Item 1", "General STEM Middle Item 2", "General STEM Middle Item 3"],
+            "humanities": ["General Humanities Middle Item 1", "General Humanities Middle Item 2", "General Humanities Middle Item 3"],
+            "sports": ["General Sports Middle Item 1", "General Sports Middle Item 2", "General Sports Middle Item 3"]
+        },
+        "high": {
+            "stem": ["General STEM High Item 1", "General STEM High Item 2", "General STEM High Item 3"],
+            "humanities": ["General Humanities High Item 1", "General Humanities High Item 2", "General Humanities High Item 3"],
+            "sports": ["General Sports High Item 1", "General Sports High Item 2", "General Sports High Item 3"]
+        },
+        "college": {
+            "stem": ["General STEM College Item 1", "General STEM College Item 2", "General STEM College Item 3"],
+            "humanities": ["General Humanities College Item 1", "General Humanities College Item 2", "General Humanities College Item 3"],
+            "sports": ["General Sports College Item 1", "General Sports College Item 2", "General Sports College Item 3"]
+        }
+    },
+    "specificActionItems": {
+        "elementary": {
+            "stem": [
+                "Specific STEM Elementary Item 1", "Specific STEM Elementary Item 2", "Specific STEM Elementary Item 3",
+                "Specific STEM Elementary Item 4", "Specific STEM Elementary Item 5", "Specific STEM Elementary Item 6",
+                "Specific STEM Elementary Item 7", "Specific STEM Elementary Item 8", "Specific STEM Elementary Item 9",
+                "Specific STEM Elementary Item 10", "Specific STEM Elementary Item 11", "Specific STEM Elementary Item 12"
+            ],
+            "humanities": [
+                "Specific Humanities Elementary Item 1", "Specific Humanities Elementary Item 2", "Specific Humanities Elementary Item 3",
+                "Specific Humanities Elementary Item 4", "Specific Humanities Elementary Item 5", "Specific Humanities Elementary Item 6",
+                "Specific Humanities Elementary Item 7", "Specific Humanities Elementary Item 8", "Specific Humanities Elementary Item 9",
+                "Specific Humanities Elementary Item 10", "Specific Humanities Elementary Item 11", "Specific Humanities Elementary Item 12"
+            ],
+            "sports": [
+                "Specific Sports Elementary Item 1", "Specific Sports Elementary Item 2", "Specific Sports Elementary Item 3",
+                "Specific Sports Elementary Item 4", "Specific Sports Elementary Item 5", "Specific Sports Elementary Item 6",
+                "Specific Sports Elementary Item 7", "Specific Sports Elementary Item 8", "Specific Sports Elementary Item 9",
+                "Specific Sports Elementary Item 10", "Specific Sports Elementary Item 11", "Specific Sports Elementary Item 12"
+            ]
+        },
+        "middle": {
+            "stem": [
+                "Specific STEM Middle Item 1", "Specific STEM Middle Item 2", "Specific STEM Middle Item 3",
+                "Specific STEM Middle Item 4", "Specific STEM Middle Item 5", "Specific STEM Middle Item 6",
+                "Specific STEM Middle Item 7", "Specific STEM Middle Item 8", "Specific STEM Middle Item 9",
+                "Specific STEM Middle Item 10", "Specific STEM Middle Item 11", "Specific STEM Middle Item 12"
+            ],
+            "humanities": [
+                "Specific Humanities Middle Item 1", "Specific Humanities Middle Item 2", "Specific Humanities Middle Item 3",
+                "Specific Humanities Middle Item 4", "Specific Humanities Middle Item 5", "Specific Humanities Middle Item 6",
+                "Specific Humanities Middle Item 7", "Specific Humanities Middle Item 8", "Specific Humanities Middle Item 9",
+                "Specific Humanities Middle Item 10", "Specific Humanities Middle Item 11", "Specific Humanities Middle Item 12"
+            ],
+            "sports": [
+                "Specific Sports Middle Item 1", "Specific Sports Middle Item 2", "Specific Sports Middle Item 3",
+                "Specific Sports Middle Item 4", "Specific Sports Middle Item 5", "Specific Sports Middle Item 6",
+                "Specific Sports Middle Item 7", "Specific Sports Middle Item 8", "Specific Sports Middle Item 9",
+                "Specific Sports Middle Item 10", "Specific Sports Middle Item 11", "Specific Sports Middle Item 12"
+            ]
+        },
+        "high": {
+            "stem": [
+                "Specific STEM High Item 1", "Specific STEM High Item 2", "Specific STEM High Item 3",
+                "Specific STEM High Item 4", "Specific STEM High Item 5", "Specific STEM High Item 6",
+                "Specific STEM High Item 7", "Specific STEM High Item 8", "Specific STEM High Item 9",
+                "Specific STEM High Item 10", "Specific STEM High Item 11", "Specific STEM High Item 12"
+            ],
+            "humanities": [
+                "Specific Humanities High Item 1", "Specific Humanities High Item 2", "Specific Humanities High Item 3",
+                "Specific Humanities High Item 4", "Specific Humanities High Item 5", "Specific Humanities High Item 6",
+                "Specific Humanities High Item 7", "Specific Humanities High Item 8", "Specific Humanities High Item 9",
+                "Specific Humanities High Item 10", "Specific Humanities High Item 11", "Specific Humanities High Item 12"
+            ],
+            "sports": [
+                "Specific Sports High Item 1", "Specific Sports High Item 2", "Specific Sports High Item 3",
+                "Specific Sports High Item 4", "Specific Sports High Item 5", "Specific Sports High Item 6",
+                "Specific Sports High Item 7", "Specific Sports High Item 8", "Specific Sports High Item 9",
+                "Specific Sports High Item 10", "Specific Sports High Item 11", "Specific Sports High Item 12"
+            ]
+        },
+        "college": {
+            "stem": [
+                "Specific STEM College Item 1", "Specific STEM College Item 2", "Specific STEM College Item 3",
+                "Specific STEM College Item 4", "Specific STEM College Item 5", "Specific STEM College Item 6",
+                "Specific STEM College Item 7", "Specific STEM College Item 8", "Specific STEM College Item 9",
+                "Specific STEM College Item 10", "Specific STEM College Item 11", "Specific STEM College Item 12"
+            ],
+            "humanities": [
+                "Specific Humanities College Item 1", "Specific Humanities College Item 2", "Specific Humanities College Item 3",
+                "Specific Humanities College Item 4", "Specific Humanities College Item 5", "Specific Humanities College Item 6",
+                "Specific Humanities College Item 7", "Specific Humanities College Item 8", "Specific Humanities College Item 9",
+                "Specific Humanities College Item 10", "Specific Humanities College Item 11", "Specific Humanities College Item 12"
+            ],
+            "sports": [
+                "Specific Sports College Item 1", "Specific Sports College Item 2", "Specific Sports College Item 3",
+                "Specific Sports College Item 4", "Specific Sports College Item 5", "Specific Sports College Item 6",
+                "Specific Sports College Item 7", "Specific Sports College Item 8", "Specific Sports College Item 9",
+                "Specific Sports College Item 10", "Specific Sports College Item 11", "Specific Sports College Item 12"
+            ]
+        }
+    }
+}
